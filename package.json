@@ -4,7 +4,8 @@
   "description": "Alumno: Carlos Javier Delgado Hernández",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha && rm -fr .nyc_output",
+    "test": "mocha",
+    "coverage": "nyc mocha && nyc report --reporter=lcov",
     "start": "tsc-watch --onSuccess \"node dist/calculator.js\"",
     "doc": "typedoc"
   },
